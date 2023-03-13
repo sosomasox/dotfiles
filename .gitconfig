@@ -1,0 +1,7 @@
+[user]
+	name = sosomasox
+	email = sosomasox@gmail.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
