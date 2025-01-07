@@ -1,0 +1,45 @@
+[user]
+    name = sosomasox
+    email = sosomasox@gmail.com
+
+[core]
+    editor = vim
+
+[init]
+    defaultBranch = main
+
+[color]
+    ui = auto
+
+[color "diff"]
+    meta = yellow bold
+    commit = green bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+    newMoved = cyan dim
+    oldMoved = blue dim
+    newMovedAlternative = cyan italic
+    oldMovedAlternative = blue italic
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
+
+[log]
+    # https://github.com/git/git/commit/acdd37769de8b0fe37a74bfc0475b63bdc55e9dc
+    date = human
+
