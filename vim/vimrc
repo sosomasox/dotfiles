@@ -1,0 +1,92 @@
+"""""""""""
+" setting "
+"""""""""""
+
+"viとの互換性を無効にする(INSERT中にカーソルキーが有効になる)
+set nocompatible
+set encoding=utf-8
+set nobackup
+set noswapfile
+set autoread
+set hidden
+""カーソルを行頭，行末で止まらないようにする
+set whichwrap=b,s,h,l,<,>,[,]
+"BSで削除できるものを指定する
+" indent  : 行頭の空白
+" eol     : 改行
+" start   : 挿入モード開始位置より手前の文字
+set backspace=indent,eol,start
+
+
+
+""""""""""
+" visual "
+""""""""""
+
+colorscheme elflord
+syntax on
+set title
+set number
+set showcmd
+"set cursorcolumn
+"set cursorline
+set virtualedit=onemore
+set visualbell
+set showmatch
+set laststatus=2
+set wildmode=list:longest
+set list
+set listchars=tab:\>\-
+nnoremap j gj
+nnoremap k gk
+hi Comment ctermfg=blue
+
+
+
+""""""""""
+" indent "
+""""""""""
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+set smartindent
+
+
+
+"""""""""""""""""""
+" search & keymap "
+"""""""""""""""""""
+
+set ignorecase
+set smartcase
+set incsearch
+set wrapscan
+set hlsearch
+nmap <Esc><Esc><Esc> :nohlsearch<CR><Esc>
+inoremap <silent> jj <Esc>
+
+
+
+"""""""""""""""""""
+" filetype plugin "
+"""""""""""""""""""
+filetype plugin indent on
+augroup fileTypeIndent
+    autocmd!
+    autocmd BufNewFile,BufRead *.json setlocal tabstop=4 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.yml  setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.j2   setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.py   setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.tf   setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.sh   setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.go   setlocal tabstop=4 shiftwidth=4 softtabstop=4
+    autocmd BufNewFile,BufRead *.js   setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.ts   setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.tsx  setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.conf setlocal tabstop=2 shiftwidth=2 softtabstop=2
+augroup END

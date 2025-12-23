@@ -1,0 +1,50 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "editor.fontSize": 12,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "/home/taichi/.vimrc",
+  "vim.handleKeys": {
+    "<C-j>": false
+  },
+  "terminal.integrated.fontSize": 12,
+  "editor.inlayHints.enabled": "off",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "editor.formatOnSave": true,
+  "extensions.ignoreRecommendations": false,
+  "editor.renderWhitespace": "boundary",
+  "github.copilot.advanced": {},
+  "github.copilot.chat.localeOverride": "ja",
+  "workbench.settings.applyToAllProfiles": [
+    "github.copilot.chat.localeOverride"
+  ],
+  "makefile.configureOnOpen": true,
+  "go.toolsManagement.autoUpdate": true,
+  "editor.unicodeHighlight.allowedLocales": {
+    "ja": true
+  },
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "go": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.editContext": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "redhat.telemetry.enabled": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "python.analysis.typeCheckingMode": "standard",
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.suggest.enabled": false
+}
